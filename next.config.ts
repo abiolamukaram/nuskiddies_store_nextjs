@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig: import('next').NextConfig = {
+  images: {
+      remotePatterns: [
+        {
+          hostname: 'res.cloudinary.com',
+        },
+        {
+          hostname: 'freepik.com'
+        }
+      ],
+  },
 };
 
 export default nextConfig;
